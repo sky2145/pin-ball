@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 4188713825915549882}
   - component: {fileID: 2145325589092256880}
   - component: {fileID: 721754479736967418}
+  - component: {fileID: 4201750876064066892}
   m_Layer: 0
-  m_Name: LargeStar
-  m_TagString: Untagged
+  m_Name: LargeStarPrehub
+  m_TagString: LargeStarTag
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -94,3 +95,15 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: -8023080413318814639, guid: ef18175de0fc8ad4ea660c7a1aa2269c, type: 3}
+--- !u!114 &4201750876064066892
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 487873315064114597}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 986fcb9962717f74ba8caed04d81b4b0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

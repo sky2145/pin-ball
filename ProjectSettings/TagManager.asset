@@ -4,8 +4,15 @@
 TagManager:
   serializedVersion: 2
   tags:
-  - Left fripper tag
   - Right fripper tag
+  - LeftFripper
+  - LeftFripperTag
+  - RightFripperTag
+  - RightFripper
+  - SmallStarTag
+  - LargeStarTag
+  - SmallCloudTag
+  - LargeCloudTag
   layers:
   - Default
   - TransparentFX
