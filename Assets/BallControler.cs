@@ -16,7 +16,8 @@ public class BallControler : MonoBehaviour
     {
         //シーン中のGameOverTextオブジェクトを取得
         this.GameoverText = GameObject.Find("GameOverText");
-        ScoreText1 = GameObject.Find("スコアを表示するためのTextコンポーネントがアタッチされたオブジェクト名をここに指定する");
+        this.ScoreText1 = GameObject.Find("ScoreText1");
+
     }
     // Update is called once per frame
     void Update()
@@ -34,17 +35,21 @@ public class BallControler : MonoBehaviour
         if (other.gameObject.tag == "SmallStarTag")
         {
             score += 10;
-            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する";
+            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です｡";
+            Debug.Log("現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する");
         }
         else if (other.gameObject.tag == "LargeStarTag")
         {
             score += 20;
-            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する";
+            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です。";
+            Debug.Log("現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する");
+
         }
         else if (other.gameObject.tag == "SmallCloudTag" || tag == "LargeCloudTag")
         {
             score += 30;
-            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する";
+            this.ScoreText1.GetComponent<Text>().text = "現在の点数は " + score.ToString() + " 点です。";
+            Debug.Log("現在の点数は " + score.ToString() + " 点です。TODO： 点数を画面に表示する");
         }
     }
 }
